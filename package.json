@@ -1,7 +1,8 @@
 {
   "name": "zoomableImage",
   "version": "0.1.0",
-  "private": true,
+  "description": "A simple Zoomable box using react-native-gesture-handler. Compatible with react-native v0.60",
+  "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -9,11 +10,37 @@
     "test": "jest",
     "lint": "eslint ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amdigbari/react-native-zoomable-image.git"
+  },
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.2",
     "react-native-gesture-handler": "^1.4.1"
   },
+  "author": "amdigbari",
+  "bugs": {
+    "url": "https://github.com/amdigbari/react-native-zoomable-image/issues"
+  },
+  "homepage": "https://github.com/amdigbari/react-native-zoomable-image#readme",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "react native",
+    "mobile",
+    "ios",
+    "android",
+    "ui",
+    "zoom",
+    "zoomable image",
+    "zoomable-image",
+    "react-native-zoomable-image",
+    "pinch",
+    "pinchable-image"
+  ],
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
