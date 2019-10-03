@@ -1,15 +1,45 @@
 import React, { Component } from "react";
-import { Animated, BackHandler, Easing, StyleSheet, View } from "react-native";
+import { Animated, BackHandler, Easing } from "react-native";
 import { PanGestureHandler, PinchGestureHandler, State, TapGestureHandler } from "react-native-gesture-handler";
 
 const USE_NATIVE_DRIVER = true;
-const animationTiming = 250;
-const SWIPE_TYPE = {
-  double: "double",
-  single: "single",
+const SWIPE_COMPLETE_DIRECTION = {
+  X: "x",
+  Y: "y",
+  BOTH: "both",
 };
 
-class ZoomableImage extends Component {
+type Props = {
+  backHandler?: Function,
+  onSwipeComplete?: Function,
+} & Partial<DefaultProps>;
+
+type DefaultProps = {
+  style: object,
+  backToDefault: boolean,
+  swipeCompleteDirection: "x" | "y" | "both",
+  swipeThreshold: number,
+  doubleTapScale: number,
+  maxScale: number,
+  doubleTap: boolean,
+  animationTiming: number,
+  maxDoubleTapDist: number,
+};
+
+const defaultProps: DefaultProps = {
+  style: { flex: 1 },
+  backToDefault: true,
+  swipeCompleteDirection: "y",
+  swipeThreshold: 100,
+  doubleTapScale: 4,
+  maxScale: 4,
+  doubleTap: false,
+  animationTiming: 250,
+  maxDoubleTapDist: 25,
+};
+
+class ZoomableBox extends Component<Props> {
+  static defaultProps = defaultProps;
   panRef = React.createRef();
 
   constructor(props) {
@@ -21,31 +51,29 @@ class ZoomableImage extends Component {
   }
 
   componentDidMount() {
-    this.backHandler = BackHandler.addEventListener("hardwareBackPress", () => {
-      if (this.pinchScaleValue !== 1 || this.lastScaleValue !== 1) {
-        this.backToDefault();
-      } else {
-        this.onSwipe(0, 0);
-      }
-      return true;
-    });
+    if (this.props.backHandler) {
+      this.backHandler = BackHandler.addEventListener("hardwareBackPress", () => {
+        if (this.pinchScaleValue !== 1 || this.lastScaleValue !== 1) {
+          this.backToDefault();
+          return true;
+        } else {
+          this.props.backHandler &&
+            this.props.backHandler({ translateX: this.translateX, translateY: this.translateY, scale: this.scale });
+        }
+      });
+    }
   }
 
   componentWillUnmount() {
     this.backHandler && this.backHandler.remove();
   }
 
-  isSingleSwipe = this.props.swipeType === SWIPE_TYPE.single;
+  isSingleSwipe = !this.props.backToDefault;
   pinchScale = new Animated.Value(1);
   baseScale = new Animated.Value(1);
   translateX = new Animated.Value(0);
   translateY = new Animated.Value(0);
   scale = Animated.multiply(this.baseScale, this.pinchScale);
-  backgroundOpacity = this.translateY.interpolate({
-    inputRange: [-this.props.swipeThreshold, 0, this.props.swipeThreshold],
-    outputRange: [0.4, 1, 0.4],
-    extrapolate: "extend",
-  });
 
   pinchScaleValue = 1;
   lastScaleValue = 1;
@@ -215,16 +243,27 @@ class ZoomableImage extends Component {
     }
   };
 
-  getImageHideTranslateY = () => this.centerY + this.image.height / 2;
-
-  onPanHandlerStateChange = ({ nativeEvent: { translationY, velocityY, translationX, state } }) => {
+  onPanHandlerStateChange = ({ nativeEvent: { translationY, velocityY, velocityX, translationX, state } }) => {
     if (state === State.END) {
       if (
         this.lastScaleValue === 1 &&
-        this.swipingDirection === "y" &&
-        Math.abs(translationY) > this.props.swipeThreshold
+        ((this.swipingDirection === SWIPE_COMPLETE_DIRECTION.Y &&
+          this.props.swipeCompleteDirection !== SWIPE_COMPLETE_DIRECTION.X &&
+          Math.abs(translationY) > this.props.swipeThreshold) ||
+          (this.swipingDirection === SWIPE_COMPLETE_DIRECTION.X &&
+            this.props.swipeCompleteDirection !== SWIPE_COMPLETE_DIRECTION.Y &&
+            Math.abs(translationX) > this.props.swipeThreshold))
       ) {
-        return this.onSwipe(translationY, velocityY);
+        return this.onSwipeComplete({
+          translateX: this.translateX,
+          translateY: this.translateY,
+          scale: this.scale,
+          translationX,
+          translationY,
+          velocityY,
+          velocityX,
+          swipeDirection: this.swipingDirection,
+        });
       } else {
         this.checkBorders(translationX, translationY);
       }
@@ -235,16 +274,10 @@ class ZoomableImage extends Component {
     }
   };
 
-  onSwipe(translationY, velocityY) {
-    const toValue = (translationY < 0 ? -1 : 1) * this.getImageHideTranslateY();
-    const duration = Math.min(Math.abs(((translationY - toValue) * 1000) / velocityY), 200);
-    return this.animate(this.translateY, toValue, duration, this.props.onSwipeComplete);
-  }
-
   zoomImageOnDoubleTap() {
-    this.lastTranslate.x = this.calculateTranslateXForScale(this.props.maxScale);
-    this.lastTranslate.y = this.calculateTranslateYForScale(this.props.maxScale);
-    this.lastScaleValue = this.props.maxScale;
+    this.lastTranslate.x = this.calculateTranslateXForScale(this.props.doubleTapScale);
+    this.lastTranslate.y = this.calculateTranslateYForScale(this.props.doubleTapScale);
+    this.lastScaleValue = this.props.doubleTapScale;
     this.setState({ isImagePinched: true });
     this.animate(this.baseScale, this.lastScaleValue);
     this.animate(this.pinchScale, 1);
@@ -254,7 +287,7 @@ class ZoomableImage extends Component {
 
   onDoubleTap = ({ nativeEvent: { x, y, state } }) => {
     if (state === State.ACTIVE) {
-      if (this.props.activeDoubleTap) {
+      if (this.props.doubleTap) {
         this.startFocal.x = x;
         this.startFocal.y = y;
         if (this.lastScaleValue > 1) {
@@ -275,12 +308,14 @@ class ZoomableImage extends Component {
     this.lastTranslate.x = 0;
     this.lastTranslate.y = 0;
     this.animate(this.translateX, 0);
-    this.animate(this.translateY, 0, animationTiming, () => {
+    this.animate(this.translateY, 0, this.props.animationTiming, () => {
       this.setState({ isImagePinched: false });
     });
   };
 
-  animate = (animatedValue, toValue, duration = animationTiming, cb) => {
+  onSwipeComplete = this.props.onSwipeComplete || this.backToDefault;
+
+  animate = (animatedValue, toValue, duration = this.props.animationTiming, cb) => {
     animatedValue.stopAnimation(() => {
       Animated.timing(animatedValue, {
         toValue: toValue,
@@ -293,37 +328,36 @@ class ZoomableImage extends Component {
 
   render() {
     const {
-      swipeType,
       backToDefault,
       onSwipeComplete,
       swipeThreshold,
       maxScale,
-      activeDoubleTap,
+      doubleTap,
       doubleTapScale,
       style,
-      wrapperStyle,
-      ImageComponent,
+      animationTiming,
+      maxDoubleTapDist,
+      children,
+      backHandler,
       ...restProps
     } = this.props;
 
-    let renderOverlayOpacity = this.state.isImagePinched ? 1 : this.backgroundOpacity;
-
     return (
-      <TapGestureHandler maxDist={25} onHandlerStateChange={this.onDoubleTap} numberOfTaps={2}>
+      <TapGestureHandler maxDist={maxDoubleTapDist} onHandlerStateChange={this.onDoubleTap} numberOfTaps={2}>
         <PanGestureHandler
           ref={this.panRef}
           onGestureEvent={this.onPanGestureEvent}
           onHandlerStateChange={this.onPanHandlerStateChange}
           minDist={10}
-          minPointers={swipeType === SWIPE_TYPE.single ? 1 : 2}
-          maxPointers={swipeType === SWIPE_TYPE.single ? 1 : 2}
+          minPointers={this.isSingleSwipe ? 1 : 2}
+          maxPointers={this.isSingleSwipe ? 1 : 2}
           avgTouches>
           <PinchGestureHandler
             simultaneousHandlers={this.panRef}
             onGestureEvent={this.onPinchGestureEvent}
             onHandlerStateChange={this.onPinchHandlerStateChange}>
-            <View
-              style={[styles.wrapperStyle, wrapperStyle]}
+            <Animated.View
+              {...restProps}
               onLayout={({
                 nativeEvent: {
                   layout: { width, height },
@@ -331,35 +365,25 @@ class ZoomableImage extends Component {
               }) => {
                 this.centerX = width / 2;
                 this.centerY = height / 2;
-              }}>
-              <Animated.View
-                style={[styles.overlayStyle, this.props.overlayStyle, { opacity: renderOverlayOpacity }]}
-              />
-              <ImageComponent
-                {...restProps}
-                onLayout={({
-                  nativeEvent: {
-                    layout: { width, height },
-                  },
-                }) => {
-                  this.image = {
-                    width,
-                    height,
-                  };
-                }}
-                style={[
-                  style,
-                  {
-                    transform: [
-                      { perspective: 200 },
-                      { scale: this.isSingleSwipe ? this.scale : this.pinchScale },
-                      { translateX: this.translateX },
-                      { translateY: this.translateY },
-                    ],
-                  },
-                ]}
-              />
-            </View>
+
+                this.image = {
+                  width,
+                  height,
+                };
+              }}
+              style={[
+                style,
+                {
+                  transform: [
+                    { perspective: 200 },
+                    { scale: this.isSingleSwipe ? this.scale : this.pinchScale },
+                    { translateX: this.translateX },
+                    { translateY: this.translateY },
+                  ],
+                },
+              ]}>
+              {children}
+            </Animated.View>
           </PinchGestureHandler>
         </PanGestureHandler>
       </TapGestureHandler>
@@ -367,30 +391,4 @@ class ZoomableImage extends Component {
   }
 }
 
-export default ZoomableImage;
-
-const styles = StyleSheet.create({
-  wrapperStyle: {
-    width: "100%",
-    height: "100%",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  overlayStyle: {
-    ...StyleSheet.absoluteFill,
-    backgroundColor: "black",
-  },
-});
-
-ZoomableImage.defaultProps = {
-  style: {},
-  source: {},
-  swipeType: "double",
-  backToDefault: true,
-  swipeEnabled: false,
-  onSwipeComplete: () => {},
-  swipeThreshold: 100,
-  maxScale: 4,
-  activeDoubleTap: false,
-  ImageComponent: Animated.Image,
-};
+export default ZoomableBox;

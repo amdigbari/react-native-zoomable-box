@@ -7,7 +7,17 @@
  */
 
 import React from "react";
-import { SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar } from "react-native";
+import {
+  SafeAreaView,
+  TouchableOpacity,
+  StyleSheet,
+  ScrollView,
+  View,
+  Text,
+  StatusBar,
+  Animated,
+  Easing,
+} from "react-native";
 
 import {
   Header,
@@ -17,13 +27,39 @@ import {
   ReloadInstructions,
 } from "react-native/Libraries/NewAppScreen";
 
-import ZoomableImage from "./src/components/ZoomableImage";
+import ZoomableBox from "./src/components/ZoomableBox";
 
 const imageUrl =
   "https://images.unsplash.com/photo-1490077476659-095159692ab5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80";
 
 const App = () => {
-  return <ZoomableImage source={{ uri: imageUrl }} style={{ width: "80%", height: "40%" }} />;
+  const animate = (animatedValue, toValue, duration = 250, cb) => {
+    animatedValue.stopAnimation(() => {
+      Animated.timing(animatedValue, {
+        toValue: toValue,
+        duration,
+        easing: Easing.linear,
+        useNativeDriver: true,
+      }).start(cb);
+    });
+  };
+
+  const onSwipe = (translateY, translationY, velocityY) => {
+    const toValue = (translationY < 0 ? -1 : 1) * 500;
+    const duration = Math.min(Math.abs(((translationY - toValue) * 1000) / velocityY), 200);
+    return animate(translateY, toValue, duration);
+  };
+
+  return (
+    <ZoomableBox style={{ width: "80%", height: "40%" }}>
+      {/* <Image source={{ uri: imageUrl }} style={{ flex: 1 }} /> */}
+      <TouchableOpacity
+        style={{ backgroundColor: "#890066", flex: 1, alignItems: "center", justifyContent: "center" }}
+        activeOpacity={1}>
+        <Text style={{ color: "white", fontSize: 20 }}>به به</Text>
+      </TouchableOpacity>
+    </ZoomableBox>
+  );
 
   return (
     <>
