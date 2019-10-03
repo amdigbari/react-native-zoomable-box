@@ -13,7 +13,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "zoomableImage";
+    return "react-native-zoomable-box";
   }
 
   @Override

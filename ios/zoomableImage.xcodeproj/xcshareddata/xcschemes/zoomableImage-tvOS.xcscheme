@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "zoomableImage-tvOS.app"
-               BlueprintName = "zoomableImage-tvOS"
-               ReferencedContainer = "container:zoomableImage.xcodeproj">
+               BuildableName = "react-native-zoomable-box-tvOS.app"
+               BlueprintName = "react-native-zoomable-box-tvOS"
+               ReferencedContainer = "container:react-native-zoomable-box.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "zoomableImage-tvOSTests.xctest"
-               BlueprintName = "zoomableImage-tvOSTests"
-               ReferencedContainer = "container:zoomableImage.xcodeproj">
+               BuildableName = "react-native-zoomable-box-tvOSTests.xctest"
+               BlueprintName = "react-native-zoomable-box-tvOSTests"
+               ReferencedContainer = "container:react-native-zoomable-box.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "zoomableImage-tvOSTests.xctest"
-               BlueprintName = "zoomableImage-tvOSTests"
-               ReferencedContainer = "container:zoomableImage.xcodeproj">
+               BuildableName = "react-native-zoomable-box-tvOSTests.xctest"
+               BlueprintName = "react-native-zoomable-box-tvOSTests"
+               ReferencedContainer = "container:react-native-zoomable-box.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "zoomableImage-tvOS.app"
-            BlueprintName = "zoomableImage-tvOS"
-            ReferencedContainer = "container:zoomableImage.xcodeproj">
+            BuildableName = "react-native-zoomable-box-tvOS.app"
+            BlueprintName = "react-native-zoomable-box-tvOS"
+            ReferencedContainer = "container:react-native-zoomable-box.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "zoomableImage-tvOS.app"
-            BlueprintName = "zoomableImage-tvOS"
-            ReferencedContainer = "container:zoomableImage.xcodeproj">
+            BuildableName = "react-native-zoomable-box-tvOS.app"
+            BlueprintName = "react-native-zoomable-box-tvOS"
+            ReferencedContainer = "container:react-native-zoomable-box.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "zoomableImage-tvOS.app"
-            BlueprintName = "zoomableImage-tvOS"
-            ReferencedContainer = "container:zoomableImage.xcodeproj">
+            BuildableName = "react-native-zoomable-box-tvOS.app"
+            BlueprintName = "react-native-zoomable-box-tvOS"
+            ReferencedContainer = "container:react-native-zoomable-box.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

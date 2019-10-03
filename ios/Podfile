@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'zoomableImage' do
-  # Pods for zoomableImage
+target 'react-native-zoomable-box' do
+  # Pods for react-native-zoomable-box
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -36,7 +36,7 @@ target 'zoomableImage' do
 
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
-  target 'zoomableImageTests' do
+  target 'react-native-zoomable-boxTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -44,10 +44,10 @@ target 'zoomableImage' do
   use_native_modules!
 end
 
-target 'zoomableImage-tvOS' do
-  # Pods for zoomableImage-tvOS
+target 'react-native-zoomable-box-tvOS' do
+  # Pods for react-native-zoomable-box-tvOS
 
-  target 'zoomableImage-tvOSTests' do
+  target 'react-native-zoomable-box-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
