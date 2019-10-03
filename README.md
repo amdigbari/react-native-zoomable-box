@@ -2,11 +2,18 @@
 
 ZoomableBox is a react Component that makes it's children zoomable
 
+## IMPORTANT!
+
+Before anything make sure you have react-native-gesture-handler on your project.
+
+You can it by following [here](https://kmagiera.github.io/react-native-gesture-handler/docs/getting-started.html#installation)
+
 ## Installation
 
 ```bash
 yarn add react-native-zoomable-box
 ```
+or
 
 ```bash
 npm install --save react-native-zoomable-box
@@ -26,17 +33,17 @@ npm install --save react-native-zoomable-box
 
 Non of props are required.
 
-| Parameter              | Type    | Default     | Description |
-| ---------------------- | ------- | ----------- | ----------- |
-| style                  | object  | { flex: 1 } |             |
-| backToDefault          | boolean | true        |             |
-| swipeCompleteDirection | string  | 'y'         |             |
-| swipeThreshold         | number  | 100         |             |
-| doubleTapScale         | number  | 4           |             |
-| maxScale               | number  | 4           |             |
-| doubleTap              | boolean | false       |             |
-| animationTiming        | number  | 250         |             |
-| maxDoubleTapDist       | number  | 25          |             |
+| Parameter              | Type    | Default     |
+| ---------------------- | ------- | ----------- |
+| style                  | object  | { flex: 1 } |
+| backToDefault          | boolean | true        |
+| swipeCompleteDirection | string  | 'y'         |
+| swipeThreshold         | number  | 100         |
+| doubleTapScale         | number  | 4           |
+| maxScale               | number  | 4           |
+| doubleTap              | boolean | false       |
+| animationTiming        | number  | 250         |
+| maxDoubleTapDist       | number  | 25          |
 
 ## Events
 
