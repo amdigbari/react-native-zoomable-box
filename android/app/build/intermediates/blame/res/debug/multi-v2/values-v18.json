@@ -4,7 +4,7 @@
             "outputFile": "/home/amir/programming/React Native/zoomableImage/react-native-zoomable-image/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "/home/amir/.gradle/caches/transforms-2/files-2.1/8af9038c41b2f711cbce56befc676209/res/values-v18/values-v18.xml",
+                    "source": "/home/amir/.gradle/caches/transforms-2/files-2.1/5280c355fc41223b1beaa4e6a5ec6a29/res/values-v18/values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

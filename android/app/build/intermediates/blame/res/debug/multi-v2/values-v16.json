@@ -4,17 +4,7 @@
             "outputFile": "/home/amir/programming/React Native/zoomableImage/react-native-zoomable-image/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/amir/.gradle/caches/transforms-2/files-2.1/bb439237240a9645811141372673fb27/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/home/amir/.gradle/caches/transforms-2/files-2.1/8af9038c41b2f711cbce56befc676209/res/values-v16/values-v16.xml",
+                    "source": "/home/amir/.gradle/caches/transforms-2/files-2.1/5280c355fc41223b1beaa4e6a5ec6a29/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/amir/.gradle/caches/transforms-2/files-2.1/6f438b9d8259265c680035aa26c6c92d/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

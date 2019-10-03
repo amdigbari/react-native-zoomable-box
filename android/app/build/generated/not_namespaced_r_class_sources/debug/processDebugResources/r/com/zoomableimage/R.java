@@ -325,6 +325,7 @@ public final class R {
      */
     public static final int activityChooserViewStyle=0x7f020021;
     /**
+     * An image reference
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -332,6 +333,7 @@ public final class R {
      */
     public static final int actualImageResource=0x7f020022;
     /**
+     * Scale type of the actual image.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -352,6 +354,7 @@ public final class R {
      */
     public static final int actualImageScaleType=0x7f020023;
     /**
+     * An image uri .
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -502,6 +505,7 @@ public final class R {
      */
     public static final int background=0x7f020034;
     /**
+     * A drawable or color to be used as a background.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1082,10 +1086,12 @@ public final class R {
      */
     public static final int expandActivityOverflowButtonDrawable=0x7f020075;
     /**
+     * Fade duration in milliseconds.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int fadeDuration=0x7f020076;
     /**
+     * A drawable to be be used as a failure image.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1093,6 +1099,7 @@ public final class R {
      */
     public static final int failureImage=0x7f020077;
     /**
+     * Scale type of the failure image. Ignored if failureImage is not specified.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1686,6 +1693,7 @@ public final class R {
      */
     public static final int overlapAnchor=0x7f0200b2;
     /**
+     * A drawable or color to be used as an overlay.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1754,6 +1762,7 @@ public final class R {
      */
     public static final int panelMenuListWidth=0x7f0200ba;
     /**
+     * A drawable or color to be be used as a placeholder.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1761,6 +1770,7 @@ public final class R {
      */
     public static final int placeholderImage=0x7f0200bb;
     /**
+     * Scale type of the placeholder image. Ignored if placeholderImage is not specified.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1812,6 +1822,7 @@ public final class R {
      */
     public static final int preserveIconSpacing=0x7f0200c0;
     /**
+     * A drawable or color to be used as a pressed-state-overlay
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1819,10 +1830,12 @@ public final class R {
      */
     public static final int pressedStateOverlayImage=0x7f0200c1;
     /**
+     * Progress bar Auto Rotate interval in milliseconds
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int progressBarAutoRotateInterval=0x7f0200c2;
     /**
+     * A drawable to be be used as a progress bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1830,6 +1843,7 @@ public final class R {
      */
     public static final int progressBarImage=0x7f0200c3;
     /**
+     * Scale type of the progress bar. Ignored if progressBarImage is not specified.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1913,6 +1927,7 @@ public final class R {
      */
     public static final int ratingBarStyleSmall=0x7f0200cc;
     /**
+     * A drawable to be be used as a retry image.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1920,6 +1935,7 @@ public final class R {
      */
     public static final int retryImage=0x7f0200cd;
     /**
+     * Scale type of the retry image. Ignored if retryImage is not specified.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1940,57 +1956,68 @@ public final class R {
      */
     public static final int retryImageScaleType=0x7f0200ce;
     /**
+     * Round as circle.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundAsCircle=0x7f0200cf;
     /**
+     * Round the bottom-end edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundBottomEnd=0x7f0200d0;
     /**
+     * Round the bottom-left corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundBottomLeft=0x7f0200d1;
     /**
+     * Round the bottom-right corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundBottomRight=0x7f0200d2;
     /**
+     * Round the bottom-start edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundBottomStart=0x7f0200d3;
     /**
+     * Round the top-end edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundTopEnd=0x7f0200d4;
     /**
+     * Round the top-left corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundTopLeft=0x7f0200d5;
     /**
+     * Round the top-right corner. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundTopRight=0x7f0200d6;
     /**
+     * Round the top-start edge. Ignored if roundAsCircle is used.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int roundTopStart=0x7f0200d7;
     /**
+     * Round by overlying color.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int roundWithOverlayColor=0x7f0200d8;
     /**
+     * Rounded corner radius. Ignored if roundAsCircle is used.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1999,12 +2026,14 @@ public final class R {
      */
     public static final int roundedCornerRadius=0x7f0200d9;
     /**
+     * Rounding border color
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int roundingBorderColor=0x7f0200da;
     /**
+     * Rounding border padding
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2013,6 +2042,7 @@ public final class R {
      */
     public static final int roundingBorderPadding=0x7f0200db;
     /**
+     * Rounding border width
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2661,6 +2691,7 @@ public final class R {
      */
     public static final int ttcIndex=0x7f020121;
     /**
+     * Aspect ratio (width / height) of the view, not necessarily of the images.
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int viewAspectRatio=0x7f020122;
@@ -3114,165 +3145,170 @@ public final class R {
     public static final int META=0x7f070003;
     public static final int SHIFT=0x7f070004;
     public static final int SYM=0x7f070005;
-    public static final int accessibility_hint=0x7f070006;
-    public static final int accessibility_role=0x7f070007;
-    public static final int action_bar=0x7f070008;
-    public static final int action_bar_activity_content=0x7f070009;
-    public static final int action_bar_container=0x7f07000a;
-    public static final int action_bar_root=0x7f07000b;
-    public static final int action_bar_spinner=0x7f07000c;
-    public static final int action_bar_subtitle=0x7f07000d;
-    public static final int action_bar_title=0x7f07000e;
-    public static final int action_container=0x7f07000f;
-    public static final int action_context_bar=0x7f070010;
-    public static final int action_divider=0x7f070011;
-    public static final int action_image=0x7f070012;
-    public static final int action_menu_divider=0x7f070013;
-    public static final int action_menu_presenter=0x7f070014;
-    public static final int action_mode_bar=0x7f070015;
-    public static final int action_mode_bar_stub=0x7f070016;
-    public static final int action_mode_close_button=0x7f070017;
-    public static final int action_text=0x7f070018;
-    public static final int actions=0x7f070019;
-    public static final int activity_chooser_view_content=0x7f07001a;
-    public static final int add=0x7f07001b;
-    public static final int alertTitle=0x7f07001c;
-    public static final int all=0x7f07001d;
-    public static final int always=0x7f07001e;
-    public static final int async=0x7f07001f;
-    public static final int beginning=0x7f070020;
-    public static final int blocking=0x7f070021;
-    public static final int bottom=0x7f070022;
-    public static final int buttonPanel=0x7f070023;
-    public static final int catalyst_redbox_title=0x7f070024;
-    public static final int center=0x7f070025;
-    public static final int centerCrop=0x7f070026;
-    public static final int centerInside=0x7f070027;
-    public static final int center_horizontal=0x7f070028;
-    public static final int center_vertical=0x7f070029;
-    public static final int checkbox=0x7f07002a;
-    public static final int chronometer=0x7f07002b;
-    public static final int clip_horizontal=0x7f07002c;
-    public static final int clip_vertical=0x7f07002d;
-    public static final int collapseActionView=0x7f07002e;
-    public static final int content=0x7f07002f;
-    public static final int contentPanel=0x7f070030;
-    public static final int custom=0x7f070031;
-    public static final int customPanel=0x7f070032;
-    public static final int decor_content_parent=0x7f070033;
-    public static final int default_activity_button=0x7f070034;
-    public static final int disableHome=0x7f070035;
-    public static final int edit_query=0x7f070036;
-    public static final int end=0x7f070037;
-    public static final int expand_activities_button=0x7f070038;
-    public static final int expanded_menu=0x7f070039;
-    public static final int fill=0x7f07003a;
-    public static final int fill_horizontal=0x7f07003b;
-    public static final int fill_vertical=0x7f07003c;
-    public static final int fitBottomStart=0x7f07003d;
-    public static final int fitCenter=0x7f07003e;
-    public static final int fitEnd=0x7f07003f;
-    public static final int fitStart=0x7f070040;
-    public static final int fitXY=0x7f070041;
-    public static final int focusCrop=0x7f070042;
-    public static final int forever=0x7f070043;
-    public static final int fps_text=0x7f070044;
-    public static final int group_divider=0x7f070045;
-    public static final int home=0x7f070046;
-    public static final int homeAsUp=0x7f070047;
-    public static final int icon=0x7f070048;
-    public static final int icon_group=0x7f070049;
-    public static final int ifRoom=0x7f07004a;
-    public static final int image=0x7f07004b;
-    public static final int info=0x7f07004c;
-    public static final int italic=0x7f07004d;
-    public static final int left=0x7f07004e;
-    public static final int line1=0x7f07004f;
-    public static final int line3=0x7f070050;
-    public static final int listMode=0x7f070051;
-    public static final int list_item=0x7f070052;
-    public static final int message=0x7f070053;
-    public static final int middle=0x7f070054;
-    public static final int multiply=0x7f070055;
-    public static final int never=0x7f070056;
-    public static final int none=0x7f070057;
-    public static final int normal=0x7f070058;
-    public static final int notification_background=0x7f070059;
-    public static final int notification_main_column=0x7f07005a;
-    public static final int notification_main_column_container=0x7f07005b;
-    public static final int parentPanel=0x7f07005c;
-    public static final int progress_circular=0x7f07005d;
-    public static final int progress_horizontal=0x7f07005e;
-    public static final int radio=0x7f07005f;
-    public static final int react_test_id=0x7f070060;
-    public static final int right=0x7f070061;
-    public static final int right_icon=0x7f070062;
-    public static final int right_side=0x7f070063;
-    public static final int rn_frame_file=0x7f070064;
-    public static final int rn_frame_method=0x7f070065;
-    public static final int rn_redbox_copy_button=0x7f070066;
-    public static final int rn_redbox_dismiss_button=0x7f070067;
-    public static final int rn_redbox_line_separator=0x7f070068;
-    public static final int rn_redbox_loading_indicator=0x7f070069;
-    public static final int rn_redbox_reload_button=0x7f07006a;
-    public static final int rn_redbox_report_button=0x7f07006b;
-    public static final int rn_redbox_report_label=0x7f07006c;
-    public static final int rn_redbox_stack=0x7f07006d;
-    public static final int screen=0x7f07006e;
-    public static final int scrollIndicatorDown=0x7f07006f;
-    public static final int scrollIndicatorUp=0x7f070070;
-    public static final int scrollView=0x7f070071;
-    public static final int search_badge=0x7f070072;
-    public static final int search_bar=0x7f070073;
-    public static final int search_button=0x7f070074;
-    public static final int search_close_btn=0x7f070075;
-    public static final int search_edit_frame=0x7f070076;
-    public static final int search_go_btn=0x7f070077;
-    public static final int search_mag_icon=0x7f070078;
-    public static final int search_plate=0x7f070079;
-    public static final int search_src_text=0x7f07007a;
-    public static final int search_voice_btn=0x7f07007b;
-    public static final int select_dialog_listview=0x7f07007c;
-    public static final int shortcut=0x7f07007d;
-    public static final int showCustom=0x7f07007e;
-    public static final int showHome=0x7f07007f;
-    public static final int showTitle=0x7f070080;
-    public static final int spacer=0x7f070081;
-    public static final int split_action_bar=0x7f070082;
-    public static final int src_atop=0x7f070083;
-    public static final int src_in=0x7f070084;
-    public static final int src_over=0x7f070085;
-    public static final int start=0x7f070086;
-    public static final int submenuarrow=0x7f070087;
-    public static final int submit_area=0x7f070088;
-    public static final int tabMode=0x7f070089;
-    public static final int tag_transition_group=0x7f07008a;
-    public static final int tag_unhandled_key_event_manager=0x7f07008b;
-    public static final int tag_unhandled_key_listeners=0x7f07008c;
-    public static final int text=0x7f07008d;
-    public static final int text2=0x7f07008e;
-    public static final int textSpacerNoButtons=0x7f07008f;
-    public static final int textSpacerNoTitle=0x7f070090;
-    public static final int time=0x7f070091;
-    public static final int title=0x7f070092;
-    public static final int titleDividerNoCustom=0x7f070093;
-    public static final int title_template=0x7f070094;
-    public static final int top=0x7f070095;
-    public static final int topPanel=0x7f070096;
-    public static final int uniform=0x7f070097;
-    public static final int up=0x7f070098;
-    public static final int useLogo=0x7f070099;
-    public static final int view_tag_instance_handle=0x7f07009a;
-    public static final int view_tag_native_id=0x7f07009b;
-    public static final int withText=0x7f07009c;
-    public static final int wrap_content=0x7f07009d;
+    public static final int accessibility_actions=0x7f070006;
+    public static final int accessibility_hint=0x7f070007;
+    public static final int accessibility_label=0x7f070008;
+    public static final int accessibility_role=0x7f070009;
+    public static final int accessibility_state=0x7f07000a;
+    public static final int accessibility_states=0x7f07000b;
+    public static final int action_bar=0x7f07000c;
+    public static final int action_bar_activity_content=0x7f07000d;
+    public static final int action_bar_container=0x7f07000e;
+    public static final int action_bar_root=0x7f07000f;
+    public static final int action_bar_spinner=0x7f070010;
+    public static final int action_bar_subtitle=0x7f070011;
+    public static final int action_bar_title=0x7f070012;
+    public static final int action_container=0x7f070013;
+    public static final int action_context_bar=0x7f070014;
+    public static final int action_divider=0x7f070015;
+    public static final int action_image=0x7f070016;
+    public static final int action_menu_divider=0x7f070017;
+    public static final int action_menu_presenter=0x7f070018;
+    public static final int action_mode_bar=0x7f070019;
+    public static final int action_mode_bar_stub=0x7f07001a;
+    public static final int action_mode_close_button=0x7f07001b;
+    public static final int action_text=0x7f07001c;
+    public static final int actions=0x7f07001d;
+    public static final int activity_chooser_view_content=0x7f07001e;
+    public static final int add=0x7f07001f;
+    public static final int alertTitle=0x7f070020;
+    public static final int all=0x7f070021;
+    public static final int always=0x7f070022;
+    public static final int async=0x7f070023;
+    public static final int beginning=0x7f070024;
+    public static final int blocking=0x7f070025;
+    public static final int bottom=0x7f070026;
+    public static final int buttonPanel=0x7f070027;
+    public static final int catalyst_redbox_title=0x7f070028;
+    public static final int center=0x7f070029;
+    public static final int centerCrop=0x7f07002a;
+    public static final int centerInside=0x7f07002b;
+    public static final int center_horizontal=0x7f07002c;
+    public static final int center_vertical=0x7f07002d;
+    public static final int checkbox=0x7f07002e;
+    public static final int chronometer=0x7f07002f;
+    public static final int clip_horizontal=0x7f070030;
+    public static final int clip_vertical=0x7f070031;
+    public static final int collapseActionView=0x7f070032;
+    public static final int content=0x7f070033;
+    public static final int contentPanel=0x7f070034;
+    public static final int custom=0x7f070035;
+    public static final int customPanel=0x7f070036;
+    public static final int decor_content_parent=0x7f070037;
+    public static final int default_activity_button=0x7f070038;
+    public static final int disableHome=0x7f070039;
+    public static final int edit_query=0x7f07003a;
+    public static final int end=0x7f07003b;
+    public static final int expand_activities_button=0x7f07003c;
+    public static final int expanded_menu=0x7f07003d;
+    public static final int fill=0x7f07003e;
+    public static final int fill_horizontal=0x7f07003f;
+    public static final int fill_vertical=0x7f070040;
+    public static final int fitBottomStart=0x7f070041;
+    public static final int fitCenter=0x7f070042;
+    public static final int fitEnd=0x7f070043;
+    public static final int fitStart=0x7f070044;
+    public static final int fitXY=0x7f070045;
+    public static final int focusCrop=0x7f070046;
+    public static final int forever=0x7f070047;
+    public static final int fps_text=0x7f070048;
+    public static final int group_divider=0x7f070049;
+    public static final int home=0x7f07004a;
+    public static final int homeAsUp=0x7f07004b;
+    public static final int icon=0x7f07004c;
+    public static final int icon_group=0x7f07004d;
+    public static final int ifRoom=0x7f07004e;
+    public static final int image=0x7f07004f;
+    public static final int info=0x7f070050;
+    public static final int italic=0x7f070051;
+    public static final int left=0x7f070052;
+    public static final int line1=0x7f070053;
+    public static final int line3=0x7f070054;
+    public static final int listMode=0x7f070055;
+    public static final int list_item=0x7f070056;
+    public static final int message=0x7f070057;
+    public static final int middle=0x7f070058;
+    public static final int multiply=0x7f070059;
+    public static final int never=0x7f07005a;
+    public static final int none=0x7f07005b;
+    public static final int normal=0x7f07005c;
+    public static final int notification_background=0x7f07005d;
+    public static final int notification_main_column=0x7f07005e;
+    public static final int notification_main_column_container=0x7f07005f;
+    public static final int parentPanel=0x7f070060;
+    public static final int progress_circular=0x7f070061;
+    public static final int progress_horizontal=0x7f070062;
+    public static final int radio=0x7f070063;
+    public static final int react_test_id=0x7f070064;
+    public static final int right=0x7f070065;
+    public static final int right_icon=0x7f070066;
+    public static final int right_side=0x7f070067;
+    public static final int rn_frame_file=0x7f070068;
+    public static final int rn_frame_method=0x7f070069;
+    public static final int rn_redbox_dismiss_button=0x7f07006a;
+    public static final int rn_redbox_line_separator=0x7f07006b;
+    public static final int rn_redbox_loading_indicator=0x7f07006c;
+    public static final int rn_redbox_reload_button=0x7f07006d;
+    public static final int rn_redbox_report_button=0x7f07006e;
+    public static final int rn_redbox_report_label=0x7f07006f;
+    public static final int rn_redbox_stack=0x7f070070;
+    public static final int screen=0x7f070071;
+    public static final int scrollIndicatorDown=0x7f070072;
+    public static final int scrollIndicatorUp=0x7f070073;
+    public static final int scrollView=0x7f070074;
+    public static final int search_badge=0x7f070075;
+    public static final int search_bar=0x7f070076;
+    public static final int search_button=0x7f070077;
+    public static final int search_close_btn=0x7f070078;
+    public static final int search_edit_frame=0x7f070079;
+    public static final int search_go_btn=0x7f07007a;
+    public static final int search_mag_icon=0x7f07007b;
+    public static final int search_plate=0x7f07007c;
+    public static final int search_src_text=0x7f07007d;
+    public static final int search_voice_btn=0x7f07007e;
+    public static final int select_dialog_listview=0x7f07007f;
+    public static final int shortcut=0x7f070080;
+    public static final int showCustom=0x7f070081;
+    public static final int showHome=0x7f070082;
+    public static final int showTitle=0x7f070083;
+    public static final int spacer=0x7f070084;
+    public static final int split_action_bar=0x7f070085;
+    public static final int src_atop=0x7f070086;
+    public static final int src_in=0x7f070087;
+    public static final int src_over=0x7f070088;
+    public static final int start=0x7f070089;
+    public static final int submenuarrow=0x7f07008a;
+    public static final int submit_area=0x7f07008b;
+    public static final int tabMode=0x7f07008c;
+    public static final int tag_transition_group=0x7f07008d;
+    public static final int tag_unhandled_key_event_manager=0x7f07008e;
+    public static final int tag_unhandled_key_listeners=0x7f07008f;
+    public static final int text=0x7f070090;
+    public static final int text2=0x7f070091;
+    public static final int textSpacerNoButtons=0x7f070092;
+    public static final int textSpacerNoTitle=0x7f070093;
+    public static final int time=0x7f070094;
+    public static final int title=0x7f070095;
+    public static final int titleDividerNoCustom=0x7f070096;
+    public static final int title_template=0x7f070097;
+    public static final int top=0x7f070098;
+    public static final int topPanel=0x7f070099;
+    public static final int uniform=0x7f07009a;
+    public static final int up=0x7f07009b;
+    public static final int useLogo=0x7f07009c;
+    public static final int view_tag_instance_handle=0x7f07009d;
+    public static final int view_tag_native_id=0x7f07009e;
+    public static final int withText=0x7f07009f;
+    public static final int wrap_content=0x7f0700a0;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f080000;
     public static final int abc_config_activityShortDur=0x7f080001;
     public static final int cancel_button_image_alpha=0x7f080002;
     public static final int config_tooltipAnimTime=0x7f080003;
-    public static final int status_bar_notification_info_maxnum=0x7f080004;
+    public static final int react_native_dev_server_port=0x7f080004;
+    public static final int react_native_inspector_proxy_port=0x7f080005;
+    public static final int status_bar_notification_info_maxnum=0x7f080006;
   }
   public static final class layout {
     public static final int abc_action_bar_title_item=0x7f090000;
@@ -3363,39 +3399,62 @@ public final class R {
     public static final int abc_shareactionprovider_share_with=0x7f0b0024;
     public static final int abc_shareactionprovider_share_with_application=0x7f0b0025;
     public static final int abc_toolbar_collapse_description=0x7f0b0026;
-    public static final int adjustable_description=0x7f0b0027;
+    public static final int alert_description=0x7f0b0027;
     public static final int app_name=0x7f0b0028;
-    public static final int catalyst_copy_button=0x7f0b0029;
-    public static final int catalyst_debugjs=0x7f0b002a;
-    public static final int catalyst_debugjs_nuclide=0x7f0b002b;
-    public static final int catalyst_debugjs_nuclide_failure=0x7f0b002c;
-    public static final int catalyst_debugjs_off=0x7f0b002d;
-    public static final int catalyst_dismiss_button=0x7f0b002e;
-    public static final int catalyst_element_inspector=0x7f0b002f;
-    public static final int catalyst_heap_capture=0x7f0b0030;
-    public static final int catalyst_hot_module_replacement=0x7f0b0031;
-    public static final int catalyst_hot_module_replacement_off=0x7f0b0032;
-    public static final int catalyst_jsload_error=0x7f0b0033;
-    public static final int catalyst_live_reload=0x7f0b0034;
-    public static final int catalyst_live_reload_off=0x7f0b0035;
-    public static final int catalyst_loading_from_url=0x7f0b0036;
-    public static final int catalyst_perf_monitor=0x7f0b0037;
-    public static final int catalyst_perf_monitor_off=0x7f0b0038;
-    public static final int catalyst_poke_sampling_profiler=0x7f0b0039;
-    public static final int catalyst_reload_button=0x7f0b003a;
-    public static final int catalyst_reloadjs=0x7f0b003b;
-    public static final int catalyst_remotedbg_error=0x7f0b003c;
-    public static final int catalyst_remotedbg_message=0x7f0b003d;
-    public static final int catalyst_report_button=0x7f0b003e;
-    public static final int catalyst_settings=0x7f0b003f;
-    public static final int catalyst_settings_title=0x7f0b0040;
-    public static final int header_description=0x7f0b0041;
-    public static final int image_button_description=0x7f0b0042;
-    public static final int image_description=0x7f0b0043;
-    public static final int link_description=0x7f0b0044;
-    public static final int search_description=0x7f0b0045;
-    public static final int search_menu_title=0x7f0b0046;
-    public static final int status_bar_notification_info_overflow=0x7f0b0047;
+    public static final int catalyst_change_bundle_location=0x7f0b0029;
+    public static final int catalyst_copy_button=0x7f0b002a;
+    public static final int catalyst_debug=0x7f0b002b;
+    public static final int catalyst_debug_chrome=0x7f0b002c;
+    public static final int catalyst_debug_chrome_stop=0x7f0b002d;
+    public static final int catalyst_debug_connecting=0x7f0b002e;
+    public static final int catalyst_debug_error=0x7f0b002f;
+    public static final int catalyst_debug_nuclide=0x7f0b0030;
+    public static final int catalyst_debug_nuclide_error=0x7f0b0031;
+    public static final int catalyst_debug_stop=0x7f0b0032;
+    public static final int catalyst_dismiss_button=0x7f0b0033;
+    public static final int catalyst_heap_capture=0x7f0b0034;
+    public static final int catalyst_hot_reloading=0x7f0b0035;
+    public static final int catalyst_hot_reloading_auto_disable=0x7f0b0036;
+    public static final int catalyst_hot_reloading_auto_enable=0x7f0b0037;
+    public static final int catalyst_hot_reloading_stop=0x7f0b0038;
+    public static final int catalyst_inspector=0x7f0b0039;
+    public static final int catalyst_loading_from_url=0x7f0b003a;
+    public static final int catalyst_perf_monitor=0x7f0b003b;
+    public static final int catalyst_perf_monitor_stop=0x7f0b003c;
+    public static final int catalyst_reload=0x7f0b003d;
+    public static final int catalyst_reload_button=0x7f0b003e;
+    public static final int catalyst_reload_error=0x7f0b003f;
+    public static final int catalyst_report_button=0x7f0b0040;
+    public static final int catalyst_sample_profiler_disable=0x7f0b0041;
+    public static final int catalyst_sample_profiler_enable=0x7f0b0042;
+    public static final int catalyst_settings=0x7f0b0043;
+    public static final int catalyst_settings_title=0x7f0b0044;
+    public static final int combobox_description=0x7f0b0045;
+    public static final int header_description=0x7f0b0046;
+    public static final int image_description=0x7f0b0047;
+    public static final int imagebutton_description=0x7f0b0048;
+    public static final int link_description=0x7f0b0049;
+    public static final int menu_description=0x7f0b004a;
+    public static final int menubar_description=0x7f0b004b;
+    public static final int menuitem_description=0x7f0b004c;
+    public static final int progressbar_description=0x7f0b004d;
+    public static final int radiogroup_description=0x7f0b004e;
+    public static final int rn_tab_description=0x7f0b004f;
+    public static final int scrollbar_description=0x7f0b0050;
+    public static final int search_description=0x7f0b0051;
+    public static final int search_menu_title=0x7f0b0052;
+    public static final int spinbutton_description=0x7f0b0053;
+    public static final int state_busy_description=0x7f0b0054;
+    public static final int state_collapsed_description=0x7f0b0055;
+    public static final int state_expanded_description=0x7f0b0056;
+    public static final int state_mixed_description=0x7f0b0057;
+    public static final int state_off_description=0x7f0b0058;
+    public static final int state_on_description=0x7f0b0059;
+    public static final int status_bar_notification_info_overflow=0x7f0b005a;
+    public static final int summary_description=0x7f0b005b;
+    public static final int tablist_description=0x7f0b005c;
+    public static final int timer_description=0x7f0b005d;
+    public static final int toolbar_description=0x7f0b005e;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0c0000;
@@ -8074,35 +8133,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_actualImageScaleType com.zoomableimage:actualImageScaleType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_backgroundImage com.zoomableimage:backgroundImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_fadeDuration com.zoomableimage:fadeDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImage com.zoomableimage:failureImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImageScaleType com.zoomableimage:failureImageScaleType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_overlayImage com.zoomableimage:overlayImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImage com.zoomableimage:placeholderImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImageScaleType com.zoomableimage:placeholderImageScaleType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_pressedStateOverlayImage com.zoomableimage:pressedStateOverlayImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarAutoRotateInterval com.zoomableimage:progressBarAutoRotateInterval}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImage com.zoomableimage:progressBarImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImageScaleType com.zoomableimage:progressBarImageScaleType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImage com.zoomableimage:retryImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImageScaleType com.zoomableimage:retryImageScaleType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundAsCircle com.zoomableimage:roundAsCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomEnd com.zoomableimage:roundBottomEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomLeft com.zoomableimage:roundBottomLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomRight com.zoomableimage:roundBottomRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomStart com.zoomableimage:roundBottomStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopEnd com.zoomableimage:roundTopEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopLeft com.zoomableimage:roundTopLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopRight com.zoomableimage:roundTopRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopStart com.zoomableimage:roundTopStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundWithOverlayColor com.zoomableimage:roundWithOverlayColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundedCornerRadius com.zoomableimage:roundedCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderColor com.zoomableimage:roundingBorderColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderPadding com.zoomableimage:roundingBorderPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderWidth com.zoomableimage:roundingBorderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GenericDraweeHierarchy_viewAspectRatio com.zoomableimage:viewAspectRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_actualImageScaleType com.zoomableimage:actualImageScaleType}</code></td><td>Scale type of the actual image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_backgroundImage com.zoomableimage:backgroundImage}</code></td><td>A drawable or color to be used as a background.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_fadeDuration com.zoomableimage:fadeDuration}</code></td><td>Fade duration in milliseconds.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImage com.zoomableimage:failureImage}</code></td><td>A drawable to be be used as a failure image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_failureImageScaleType com.zoomableimage:failureImageScaleType}</code></td><td>Scale type of the failure image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_overlayImage com.zoomableimage:overlayImage}</code></td><td>A drawable or color to be used as an overlay.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImage com.zoomableimage:placeholderImage}</code></td><td>A drawable or color to be be used as a placeholder.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_placeholderImageScaleType com.zoomableimage:placeholderImageScaleType}</code></td><td>Scale type of the placeholder image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_pressedStateOverlayImage com.zoomableimage:pressedStateOverlayImage}</code></td><td>A drawable or color to be used as a pressed-state-overlay</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarAutoRotateInterval com.zoomableimage:progressBarAutoRotateInterval}</code></td><td>Progress bar Auto Rotate interval in milliseconds</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImage com.zoomableimage:progressBarImage}</code></td><td>A drawable to be be used as a progress bar.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_progressBarImageScaleType com.zoomableimage:progressBarImageScaleType}</code></td><td>Scale type of the progress bar.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImage com.zoomableimage:retryImage}</code></td><td>A drawable to be be used as a retry image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_retryImageScaleType com.zoomableimage:retryImageScaleType}</code></td><td>Scale type of the retry image.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundAsCircle com.zoomableimage:roundAsCircle}</code></td><td>Round as circle.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomEnd com.zoomableimage:roundBottomEnd}</code></td><td>Round the bottom-end edge.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomLeft com.zoomableimage:roundBottomLeft}</code></td><td>Round the bottom-left corner.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomRight com.zoomableimage:roundBottomRight}</code></td><td>Round the bottom-right corner.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundBottomStart com.zoomableimage:roundBottomStart}</code></td><td>Round the bottom-start edge.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopEnd com.zoomableimage:roundTopEnd}</code></td><td>Round the top-end edge.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopLeft com.zoomableimage:roundTopLeft}</code></td><td>Round the top-left corner.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopRight com.zoomableimage:roundTopRight}</code></td><td>Round the top-right corner.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundTopStart com.zoomableimage:roundTopStart}</code></td><td>Round the top-start edge.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundWithOverlayColor com.zoomableimage:roundWithOverlayColor}</code></td><td>Round by overlying color.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundedCornerRadius com.zoomableimage:roundedCornerRadius}</code></td><td>Rounded corner radius.</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderColor com.zoomableimage:roundingBorderColor}</code></td><td>Rounding border color</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderPadding com.zoomableimage:roundingBorderPadding}</code></td><td>Rounding border padding</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_roundingBorderWidth com.zoomableimage:roundingBorderWidth}</code></td><td>Rounding border width</td></tr>
+     * <tr><td><code>{@link #GenericDraweeHierarchy_viewAspectRatio com.zoomableimage:viewAspectRatio}</code></td><td>Aspect ratio (width / height) of the view, not necessarily of the images.</td></tr>
      * </table>
      * @see #GenericDraweeHierarchy_actualImageScaleType
      * @see #GenericDraweeHierarchy_backgroundImage
@@ -8145,8 +8204,9 @@ public final class R {
       0x7f020122
     };
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#actualImageScaleType}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Scale type of the actual image.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -8170,8 +8230,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_actualImageScaleType=0;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#backgroundImage}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * A drawable or color to be used as a background.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8182,8 +8243,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_backgroundImage=1;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#fadeDuration}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Fade duration in milliseconds.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -8191,8 +8253,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_fadeDuration=2;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#failureImage}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * A drawable to be be used as a failure image.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8203,8 +8266,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_failureImage=3;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#failureImageScaleType}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Scale type of the failure image. Ignored if failureImage is not specified.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -8228,8 +8292,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_failureImageScaleType=4;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#overlayImage}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * A drawable or color to be used as an overlay.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8240,8 +8305,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_overlayImage=5;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#placeholderImage}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * A drawable or color to be be used as a placeholder.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8252,8 +8318,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_placeholderImage=6;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#placeholderImageScaleType}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Scale type of the placeholder image. Ignored if placeholderImage is not specified.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -8277,8 +8344,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_placeholderImageScaleType=7;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#pressedStateOverlayImage}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * A drawable or color to be used as a pressed-state-overlay
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8289,8 +8357,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_pressedStateOverlayImage=8;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#progressBarAutoRotateInterval}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Progress bar Auto Rotate interval in milliseconds
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -8298,8 +8367,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_progressBarAutoRotateInterval=9;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#progressBarImage}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * A drawable to be be used as a progress bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8310,8 +8380,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_progressBarImage=10;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#progressBarImageScaleType}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Scale type of the progress bar. Ignored if progressBarImage is not specified.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -8335,8 +8406,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_progressBarImageScaleType=11;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#retryImage}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * A drawable to be be used as a retry image.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8347,8 +8419,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_retryImage=12;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#retryImageScaleType}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Scale type of the retry image. Ignored if retryImage is not specified.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -8372,8 +8445,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_retryImageScaleType=13;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundAsCircle}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Round as circle.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8382,8 +8456,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundAsCircle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundBottomEnd}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Round the bottom-end edge. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8392,8 +8467,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundBottomEnd=15;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundBottomLeft}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Round the bottom-left corner. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8402,8 +8478,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundBottomLeft=16;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundBottomRight}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Round the bottom-right corner. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8412,8 +8489,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundBottomRight=17;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundBottomStart}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Round the bottom-start edge. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8422,8 +8500,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundBottomStart=18;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundTopEnd}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Round the top-end edge. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8432,8 +8511,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundTopEnd=19;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundTopLeft}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Round the top-left corner. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8442,8 +8522,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundTopLeft=20;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundTopRight}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Round the top-right corner. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8452,8 +8533,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundTopRight=21;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundTopStart}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Round the top-start edge. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8462,8 +8544,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundTopStart=22;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundWithOverlayColor}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Round by overlying color.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -8473,8 +8556,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundWithOverlayColor=23;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundedCornerRadius}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Rounded corner radius. Ignored if roundAsCircle is used.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8486,8 +8570,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundedCornerRadius=24;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundingBorderColor}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Rounding border color
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -8497,8 +8582,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundingBorderColor=25;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundingBorderPadding}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Rounding border padding
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8510,8 +8596,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundingBorderPadding=26;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundingBorderWidth}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Rounding border width
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8523,8 +8610,9 @@ public final class R {
      */
     public static final int GenericDraweeHierarchy_roundingBorderWidth=27;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#viewAspectRatio}
-     * attribute's value can be found in the {@link #GenericDraweeHierarchy} array.
+     * <p>
+     * @attr description
+     * Aspect ratio (width / height) of the view, not necessarily of the images.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -10232,37 +10320,37 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_actualImageResource com.zoomableimage:actualImageResource}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_actualImageScaleType com.zoomableimage:actualImageScaleType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_actualImageUri com.zoomableimage:actualImageUri}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_backgroundImage com.zoomableimage:backgroundImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_fadeDuration com.zoomableimage:fadeDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_failureImage com.zoomableimage:failureImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_failureImageScaleType com.zoomableimage:failureImageScaleType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_overlayImage com.zoomableimage:overlayImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_placeholderImage com.zoomableimage:placeholderImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_placeholderImageScaleType com.zoomableimage:placeholderImageScaleType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_pressedStateOverlayImage com.zoomableimage:pressedStateOverlayImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_progressBarAutoRotateInterval com.zoomableimage:progressBarAutoRotateInterval}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_progressBarImage com.zoomableimage:progressBarImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_progressBarImageScaleType com.zoomableimage:progressBarImageScaleType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_retryImage com.zoomableimage:retryImage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_retryImageScaleType com.zoomableimage:retryImageScaleType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundAsCircle com.zoomableimage:roundAsCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomEnd com.zoomableimage:roundBottomEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomLeft com.zoomableimage:roundBottomLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomRight com.zoomableimage:roundBottomRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundBottomStart com.zoomableimage:roundBottomStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopEnd com.zoomableimage:roundTopEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopLeft com.zoomableimage:roundTopLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopRight com.zoomableimage:roundTopRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundTopStart com.zoomableimage:roundTopStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundWithOverlayColor com.zoomableimage:roundWithOverlayColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundedCornerRadius com.zoomableimage:roundedCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderColor com.zoomableimage:roundingBorderColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderPadding com.zoomableimage:roundingBorderPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderWidth com.zoomableimage:roundingBorderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleDraweeView_viewAspectRatio com.zoomableimage:viewAspectRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_actualImageResource com.zoomableimage:actualImageResource}</code></td><td>An image reference</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_actualImageScaleType com.zoomableimage:actualImageScaleType}</code></td><td>Scale type of the actual image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_actualImageUri com.zoomableimage:actualImageUri}</code></td><td>An image uri .</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_backgroundImage com.zoomableimage:backgroundImage}</code></td><td>A drawable or color to be used as a background.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_fadeDuration com.zoomableimage:fadeDuration}</code></td><td>Fade duration in milliseconds.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_failureImage com.zoomableimage:failureImage}</code></td><td>A drawable to be be used as a failure image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_failureImageScaleType com.zoomableimage:failureImageScaleType}</code></td><td>Scale type of the failure image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_overlayImage com.zoomableimage:overlayImage}</code></td><td>A drawable or color to be used as an overlay.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_placeholderImage com.zoomableimage:placeholderImage}</code></td><td>A drawable or color to be be used as a placeholder.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_placeholderImageScaleType com.zoomableimage:placeholderImageScaleType}</code></td><td>Scale type of the placeholder image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_pressedStateOverlayImage com.zoomableimage:pressedStateOverlayImage}</code></td><td>A drawable or color to be used as a pressed-state-overlay</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_progressBarAutoRotateInterval com.zoomableimage:progressBarAutoRotateInterval}</code></td><td>Progress bar Auto Rotate interval in milliseconds</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_progressBarImage com.zoomableimage:progressBarImage}</code></td><td>A drawable to be be used as a progress bar.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_progressBarImageScaleType com.zoomableimage:progressBarImageScaleType}</code></td><td>Scale type of the progress bar.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_retryImage com.zoomableimage:retryImage}</code></td><td>A drawable to be be used as a retry image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_retryImageScaleType com.zoomableimage:retryImageScaleType}</code></td><td>Scale type of the retry image.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundAsCircle com.zoomableimage:roundAsCircle}</code></td><td>Round as circle.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomEnd com.zoomableimage:roundBottomEnd}</code></td><td>Round the bottom-end edge.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomLeft com.zoomableimage:roundBottomLeft}</code></td><td>Round the bottom-left corner.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomRight com.zoomableimage:roundBottomRight}</code></td><td>Round the bottom-right corner.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundBottomStart com.zoomableimage:roundBottomStart}</code></td><td>Round the bottom-start edge.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopEnd com.zoomableimage:roundTopEnd}</code></td><td>Round the top-end edge.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopLeft com.zoomableimage:roundTopLeft}</code></td><td>Round the top-left corner.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopRight com.zoomableimage:roundTopRight}</code></td><td>Round the top-right corner.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundTopStart com.zoomableimage:roundTopStart}</code></td><td>Round the top-start edge.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundWithOverlayColor com.zoomableimage:roundWithOverlayColor}</code></td><td>Round by overlying color.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundedCornerRadius com.zoomableimage:roundedCornerRadius}</code></td><td>Rounded corner radius.</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderColor com.zoomableimage:roundingBorderColor}</code></td><td>Rounding border color</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderPadding com.zoomableimage:roundingBorderPadding}</code></td><td>Rounding border padding</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_roundingBorderWidth com.zoomableimage:roundingBorderWidth}</code></td><td>Rounding border width</td></tr>
+     * <tr><td><code>{@link #SimpleDraweeView_viewAspectRatio com.zoomableimage:viewAspectRatio}</code></td><td>Aspect ratio (width / height) of the view, not necessarily of the images.</td></tr>
      * </table>
      * @see #SimpleDraweeView_actualImageResource
      * @see #SimpleDraweeView_actualImageScaleType
@@ -10307,8 +10395,9 @@ public final class R {
       0x7f0200db, 0x7f0200dc, 0x7f020122
     };
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#actualImageResource}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * An image reference
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10319,8 +10408,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_actualImageResource=0;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#actualImageScaleType}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Scale type of the actual image.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -10344,8 +10434,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_actualImageScaleType=1;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#actualImageUri}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * An image uri .
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -10354,8 +10445,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_actualImageUri=2;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#backgroundImage}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * A drawable or color to be used as a background.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10366,8 +10458,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_backgroundImage=3;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#fadeDuration}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Fade duration in milliseconds.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -10375,8 +10468,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_fadeDuration=4;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#failureImage}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * A drawable to be be used as a failure image.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10387,8 +10481,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_failureImage=5;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#failureImageScaleType}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Scale type of the failure image. Ignored if failureImage is not specified.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -10412,8 +10507,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_failureImageScaleType=6;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#overlayImage}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * A drawable or color to be used as an overlay.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10424,8 +10520,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_overlayImage=7;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#placeholderImage}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * A drawable or color to be be used as a placeholder.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10436,8 +10533,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_placeholderImage=8;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#placeholderImageScaleType}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Scale type of the placeholder image. Ignored if placeholderImage is not specified.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -10461,8 +10559,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_placeholderImageScaleType=9;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#pressedStateOverlayImage}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * A drawable or color to be used as a pressed-state-overlay
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10473,8 +10572,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_pressedStateOverlayImage=10;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#progressBarAutoRotateInterval}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Progress bar Auto Rotate interval in milliseconds
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -10482,8 +10582,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_progressBarAutoRotateInterval=11;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#progressBarImage}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * A drawable to be be used as a progress bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10494,8 +10595,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_progressBarImage=12;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#progressBarImageScaleType}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Scale type of the progress bar. Ignored if progressBarImage is not specified.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -10519,8 +10621,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_progressBarImageScaleType=13;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#retryImage}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * A drawable to be be used as a retry image.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10531,8 +10634,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_retryImage=14;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#retryImageScaleType}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Scale type of the retry image. Ignored if retryImage is not specified.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -10556,8 +10660,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_retryImageScaleType=15;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundAsCircle}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Round as circle.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10566,8 +10671,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundAsCircle=16;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundBottomEnd}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Round the bottom-end edge. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10576,8 +10682,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundBottomEnd=17;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundBottomLeft}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Round the bottom-left corner. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10586,8 +10693,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundBottomLeft=18;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundBottomRight}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Round the bottom-right corner. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10596,8 +10704,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundBottomRight=19;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundBottomStart}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Round the bottom-start edge. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10606,8 +10715,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundBottomStart=20;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundTopEnd}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Round the top-end edge. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10616,8 +10726,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundTopEnd=21;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundTopLeft}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Round the top-left corner. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10626,8 +10737,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundTopLeft=22;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundTopRight}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Round the top-right corner. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10636,8 +10748,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundTopRight=23;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundTopStart}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Round the top-start edge. Ignored if roundAsCircle is used.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10646,8 +10759,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundTopStart=24;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundWithOverlayColor}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Round by overlying color.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10657,8 +10771,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundWithOverlayColor=25;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundedCornerRadius}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Rounded corner radius. Ignored if roundAsCircle is used.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10670,8 +10785,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundedCornerRadius=26;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundingBorderColor}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Rounding border color
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10681,8 +10797,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundingBorderColor=27;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundingBorderPadding}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Rounding border padding
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10694,8 +10811,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundingBorderPadding=28;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#roundingBorderWidth}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Rounding border width
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10707,8 +10825,9 @@ public final class R {
      */
     public static final int SimpleDraweeView_roundingBorderWidth=29;
     /**
-     * <p>This symbol is the offset where the {@link com.zoomableimage.R.attr#viewAspectRatio}
-     * attribute's value can be found in the {@link #SimpleDraweeView} array.
+     * <p>
+     * @attr description
+     * Aspect ratio (width / height) of the view, not necessarily of the images.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *

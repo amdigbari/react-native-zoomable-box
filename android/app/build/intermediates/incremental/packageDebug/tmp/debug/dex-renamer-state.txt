@@ -1,4 +1,4 @@
-#Thu Oct 03 15:28:52 IRST 2019
+#Thu Oct 03 17:48:42 IRST 2019
 base.0=/home/amir/programming/React Native/zoomableImage/react-native-zoomable-image/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
