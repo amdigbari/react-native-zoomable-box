@@ -26,19 +26,24 @@ npm install --save react-native-zoomable-box
 
 Non of props are required.
 
-| Parameter              | Type     | Default     |
-| ---------------------- | -------- | ----------- |
-| style                  | object   | { flex: 1 } |
-| backToDefault          | boolean  | true        |
-| swipeCompleteDirection | string   | 'y'         |
-| swipeThreshold         | number   | 100         |
-| doubleTapScale         | number   | 4           |
-| maxScale               | number   | 4           |
-| doubleTap              | boolean  | false       |
-| animationTiming        | number   | 250         |
-| maxDoubleTapDist       | number   | 25          |
-| backHandler            | function | \_\_\_      |
-| onSwipeComplete        | function | \_\_\_      |
+| Parameter              | Type    | Default     | Description |
+| ---------------------- | ------- | ----------- | ----------- |
+| style                  | object  | { flex: 1 } |             |
+| backToDefault          | boolean | true        |             |
+| swipeCompleteDirection | string  | 'y'         |             |
+| swipeThreshold         | number  | 100         |             |
+| doubleTapScale         | number  | 4           |             |
+| maxScale               | number  | 4           |             |
+| doubleTap              | boolean | false       |             |
+| animationTiming        | number  | 250         |             |
+| maxDoubleTapDist       | number  | 25          |             |
+
+## Events
+
+| Parameter       | params                                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------------------ |
+| backHandler     | ({ translateX, translateY, scale }) => ...                                                                   |
+| onSwipeComplete | ({ translateX, translateY, scale, translationX, translationY, velocityY, velocityX, swipeDirection }) => ... |
 
 ## Contributing
 
