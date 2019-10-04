@@ -10,12 +10,12 @@ const SWIPE_COMPLETE_DIRECTION = {
 };
 
 type Props = {
+  style?: object,
   backHandler?: Function,
   onSwipeComplete?: Function,
 } & Partial<DefaultProps>;
 
 type DefaultProps = {
-  style: object,
   backToDefault: boolean,
   swipeCompleteDirection: "x" | "y" | "both",
   swipeThreshold: number,
@@ -27,7 +27,6 @@ type DefaultProps = {
 };
 
 const defaultProps: DefaultProps = {
-  style: { flex: 1 },
   backToDefault: true,
   swipeCompleteDirection: "y",
   swipeThreshold: 100,
@@ -372,7 +371,6 @@ class ZoomableBox extends Component<Props> {
                 };
               }}
               style={[
-                style,
                 {
                   transform: [
                     { perspective: 200 },
@@ -381,6 +379,7 @@ class ZoomableBox extends Component<Props> {
                     { translateY: this.translateY },
                   ],
                 },
+                style,
               ]}>
               {children}
             </Animated.View>
