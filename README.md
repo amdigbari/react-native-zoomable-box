@@ -6,7 +6,7 @@ ZoomableBox is a react Component that makes it's children zoomable
 
 Before anything make sure you have react-native-gesture-handler on your project.
 
-You can it by following [here](https://kmagiera.github.io/react-native-gesture-handler/docs/getting-started.html#installation)
+You can add it by following these instructions [here](https://kmagiera.github.io/react-native-gesture-handler/docs/getting-started.html#installation)
 
 ## Installation
 
