@@ -1,6 +1,6 @@
 {
   "name": "react-native-zoomable-box",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple Zoomable box using react-native-gesture-handler. Compatible with react-native v0.60",
   "main": "index.js",
   "scripts": {

@@ -13,6 +13,7 @@ You can it by following [here](https://kmagiera.github.io/react-native-gesture-h
 ```bash
 yarn add react-native-zoomable-box
 ```
+
 or
 
 ```bash
@@ -33,17 +34,17 @@ npm install --save react-native-zoomable-box
 
 Non of props are required.
 
-| Parameter              | Type    | Default     |
-| ---------------------- | ------- | ----------- |
-| style                  | object  | { flex: 1 } |
-| backToDefault          | boolean | true        |
-| swipeCompleteDirection | string  | 'y'         |
-| swipeThreshold         | number  | 100         |
-| doubleTapScale         | number  | 4           |
-| maxScale               | number  | 4           |
-| doubleTap              | boolean | false       |
-| animationTiming        | number  | 250         |
-| maxDoubleTapDist       | number  | 25          |
+| Parameter              | Type    | Default        |
+| ---------------------- | ------- | -------------- |
+| style                  | object  | ****\_\_\_**** |
+| backToDefault          | boolean | true           |
+| swipeCompleteDirection | string  | 'y'            |
+| swipeThreshold         | number  | 100            |
+| doubleTapScale         | number  | 4              |
+| maxScale               | number  | 4              |
+| doubleTap              | boolean | false          |
+| animationTiming        | number  | 250            |
+| maxDoubleTapDist       | number  | 25             |
 
 ## Events
 
